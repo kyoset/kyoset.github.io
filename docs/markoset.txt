@@ -1,1 +1,17 @@
-d
+CCCApply Login
+User: markoset
+Passwd: h123
+Email: 8anime@yopmail.com
+
+Data
+Name: Koset Mar
+Date of Birth: 02/02/1992
+Address: 2503 Red Maple Drive
+City: Bellflower
+State: California
+Zipcode: 90706
+Telp1: 209-679-5349
+Telp2: 323-374-6264
+SSN Number: 606-09-4546
+
++======== End Database ========+
