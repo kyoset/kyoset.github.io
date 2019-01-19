@@ -1,1 +1,141 @@
-No
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+<script language="javascript" type="text/javascript">
+if (location.protocol != 'https:')
+{
+ location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
+    </script>
+<script type="text/javascript">
+function base64_decode (data) {
+  var b64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+  var o1, o2, o3, h1, h2, h3, h4, bits, i = 0,
+    ac = 0,
+    dec = "",
+    tmp_arr = [];
+
+  if (!data) {
+    return data;
+  }
+
+  data += '';
+
+  do { // unpack four hexets into three octets using index points in b64
+    h1 = b64.indexOf(data.charAt(i++));
+    h2 = b64.indexOf(data.charAt(i++));
+    h3 = b64.indexOf(data.charAt(i++));
+    h4 = b64.indexOf(data.charAt(i++));
+
+    bits = h1 << 18 | h2 << 12 | h3 << 6 | h4;
+
+    o1 = bits >> 16 & 0xff;
+    o2 = bits >> 8 & 0xff;
+    o3 = bits & 0xff;
+
+    if (h3 == 64) {
+      tmp_arr[ac++] = String.fromCharCode(o1);
+    } else if (h4 == 64) {
+      tmp_arr[ac++] = String.fromCharCode(o1, o2);
+    } else {
+      tmp_arr[ac++] = String.fromCharCode(o1, o2, o3);
+    }
+  } while (i < data.length);
+
+  dec = tmp_arr.join('');
+
+  return dec;
+}
+
+	function showlink(){
+	   var urldes = base64_decode(document.location.href.match(/\/\?(.+)\/?/)[1]);
+     buton.innerHTML = ' CONTINUE...!! ';
+	    buton.setAttribute('href', urldes );
+	}
+
+</script>
+<style type="text/css">
+@font-face {
+    font-family: "popeme";
+    src: url(https://japan-paw.net/wp-content/themes/Newspaper/fonts/popeme.woff);
+}
+  body{
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    margin-top: 10%;
+    color: white;
+  }
+  a, a:visited {
+    color: #FFF;
+    
+  }
+  .link{
+    text-decoration: none;
+font-family: Ubuntu;
+      }
+  .caja {
+    background-color: #54789285;
+    color: #FFF;
+    padding: 4px;
+    width: 60%;
+    border-radius: 3px;
+
+} 
+
+.boton{
+  background-color: #E52775;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 3px;
+    width: 50%;
+    height: auto;
+    margin: 25px 25px 25px 25px;
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 62px;
+}
+.boton.is-hovered, .boton:hover {
+    background-color: #000;
+    color: #E52775;
+    border: solid 1px #E52775;
+.   border-radius: 3px;
+    width: 50%;
+    height: auto;
+    margin: 25px 25px 25px 25px;
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 62px;
+}
+</style>
+</head>
+<title>Koset SafeLink</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<center>
+<div class="caja">
+<h2 style="font-size:70px;font-family: Fredericka the Great">Koset SafeLink</h2>
+<h2 style="font-family: Ubuntu">Please wait for 3 seconds timer</h2>
+<div class="boton">
+<h2><a href="" class=link></a></h2>
+</div>
+</div>
+</center>
+<script type="text/javascript">
+var buton = document.getElementsByClassName('link')[0];
+var count = 3;
+var countdaemon = setInterval(function () {
+  if (count>0){
+    buton.innerHTML = ' Wait '+count+' second.. '
+  } else {
+    clearInterval(countdaemon)
+    showlink()
+  }
+  count--;
+},1000);
+</script>
+</body>
+</html>
