@@ -1,15 +1,13 @@
 // Event
-$('.page-scroll').on('click', function(e){
-	// Ambil isi href
-	var tujuan = $(this).attr('href');
-	// Ambil Elemen href
-	var elemenTujuan = $(tujuan);
+$('.page-scroll').on('click', function(e) {
 
-	// Pindahkan Nyekrol
-	$('body').animate({
-	scrollTop: elemenTujuan.offset().top -50
-	}, 1250, 'easeInOuExpo');
+ var tujuan = $(this).attr('href');
 
-	e.preventDefault();
+ var elemenTujuan = $(tujuan);
 
-});
+ $('html , body').animate({
+  scrollTop: elemenTujuan.offset().top - 50
+ }, 1250, 'easeInOutExpo');
+
+ e.preventDefault();
+});﻿
