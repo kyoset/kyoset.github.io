@@ -7,9 +7,24 @@ body {
 	margin-top: 30px;
 }
 
+.jumbotron {
+	height: 400px;
+	background-image: url('../img/header-bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 40px;
+	color: #fff;
+	overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron p {
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+}
+
 .jumbotron img {
 	width: 200px;
 	border: 4px solid #80000085;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
 .about hr {
@@ -26,6 +41,21 @@ body {
 	border-top: 3px solid #800000;
 }
 
+.pleft, .pright {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 1s;
+}
+
+.pright {
+	transform: translate(50px, 0);
+}
+
+.pleft.pshow, .pright.pshow {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
 .portfolio hr {
 	width: 250px;
 	border-top: 3px solid #800000;
@@ -33,6 +63,17 @@ body {
 
 .portfolio {
 	background-color: #eee;
+}
+
+.portfolio .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.portfolio .thumbnail.foto {
+	opacity: 1;
+	transform: translate(0,0);
 }
 
 section {
@@ -43,7 +84,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 100px;
+	height: auto;
 	background-color: #333;
 	padding-top: 15px;
 }
