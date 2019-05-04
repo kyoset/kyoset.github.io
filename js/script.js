@@ -7,7 +7,7 @@ $('.page-scroll').on('click', function(e){
 
 	// Pindahkan Nyekrol
 	$('body').animate({
-		scrollTop: elemenTujuan.offset().top -50
+	scrollTop: elemenTujuan.offset().top -50
 	}, 1250, 'easeInOuExpo');
 
 	e.preventDefault();
