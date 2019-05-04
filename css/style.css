@@ -12,7 +12,7 @@ body {
 	background-image: url('../img/header-bg.jpg');
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: 0 40px;
+	background-position: 0 50px;
 	color: #fff;
 	overflow: hidden;
 }
@@ -21,10 +21,23 @@ body {
 	text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
 }
 
+.jumbotron p {
+	font-family: Ubuntu;
+}
+
 .jumbotron img {
 	width: 200px;
 	border: 4px solid #80000085;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.about p {
+	font-family: Ubuntu;
+}
+
+.about h2 {
+	font-family: Fredericka the Great;
+
 }
 
 .about hr {
@@ -34,6 +47,11 @@ body {
 
 .contact {
 	min-height: 600px;
+}
+
+.contact h2 {
+	font-family: Fredericka the Great;
+
 }
 
 .contact hr {
@@ -61,8 +79,26 @@ body {
 	border-top: 3px solid #800000;
 }
 
+.portfolio h2 {
+	font-family: Fredericka the Great;
+}
+
+.portfolio h3 {
+	font-family: Ubuntu;
+	height: 6px;
+	margin-bottom: 16px;
+	margin-top: 2px;
+}
+
 .portfolio {
 	background-color: #eee;
+}
+
+.portfolio img {
+	height: 400px;
+	width: 100%;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .portfolio .thumbnail {
