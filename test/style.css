@@ -1,0 +1,18 @@
+.idnumb, input {
+	width: 90%;
+	position: relative center;
+	margin-left: 50px;
+	margin-top: 20px;
+	font-size: 150px;
+	background-color: #fff;
+	border: 1px;
+	border-color: #fff;
+
+}
+.form-group {
+	width: 30%;
+	margin: 30px;
+	.glyphicon {
+		color: $quantity-btn-color;
+	}
+}
