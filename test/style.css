@@ -1,3 +1,7 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
 .idnumb, input {
 	width: 90%;
 	position: relative center;
