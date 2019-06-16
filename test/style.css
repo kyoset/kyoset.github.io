@@ -14,7 +14,7 @@ body, html {
 
 }
 button {
-	position: center;
+	margin-left: 40px;
 }
 
 .form-group {
