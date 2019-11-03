@@ -30,6 +30,45 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+@-webkit-keyframes spin {
+  from {
+        -webkit-transform: rotate(0deg);
+  }
+  to {
+        -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+        -moz-transform: rotate(0deg);
+  }
+  to {
+        -moz-transform: rotate(360deg);
+  }
+}
+
+#spin {
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 25s;
+  animation-play-state: running;
+
+  -webkit-animation-name: spin;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 25s;
+  -webkit-animation-play-state: running;
+
+  -moz-animation-name: spin;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-duration: 25s;
+  -moz-animation-play-state: running;
+    }
+    </style>
     <!-- Favicon -->
     <link rel="icon" href="https://github.githubassets.com/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="https://github.githubassets.com/favicon.ico" type="image/x-icon" />
@@ -69,9 +108,9 @@
 
     <!-- Jumbotron -->
     <div class="jumbotron text-center">
-      <img src="img/profil.jpg" class="img-circle" alt="Profile">
+      <img src="img/profil.jpg" class="img-circle" id="spin" alt="Profile">
       <h1>Andri Pranata</h1>
-      <p>Stalker | Tusboler | Beginner</p>
+      <p>JavaScript | PHP | HTML | CGI | NODEJS | CSS</p>
     </div>
     <!-- End Jumbotron -->
 
@@ -108,10 +147,10 @@
 
         <div class="row text-center">
           <div class="col-sm-4">
-            <a class="thumbnail" title="MARKOSET" href="https://www.facebook.com/andry.st4zz">
-              <img src="img/foto/1.jpg" title="MARKOSET" alt="1">
+            <a class="thumbnail" title="KOSET" href="https://www.facebook.com/andri.shtml">
+              <img src="img/foto/1.jpg" title="KOSET" alt="1">
               <div class="caption">
-                <h3>MARKOSET</h3>
+                <h3>KOSET</h3>
               </div>
             </a>
           </div>
